@@ -14,9 +14,15 @@
 ### <참고할 오픈소스>
 
 https://github.com/kwonay11/TodayEat
+
 https://github.com/dpdms529/JMT
+
 https://github.com/kkobooc/Crawling_Matzip
+
 https://data101.oopy.io/recommendation-engine-cosine-similarity
+
 https://cordingdoah.tistory.com/m/97
+
 https://j-remind.tistory.com/m/67
+
 https://hoypick.tistory.com/286
