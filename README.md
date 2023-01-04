@@ -37,4 +37,4 @@ CSS : https://dinfree.com/lecture/frontend/122_css_1.html
 
 JS : https://dinfree.com/lecture/frontend/123_js_1.html
 
-웹 사이트 템플릿  : https://hwang-chive.tistory.com/78
+웹 사이트 템플릿 모음 : https://hwang-chive.tistory.com/78
