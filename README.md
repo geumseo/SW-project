@@ -27,6 +27,9 @@ https://j-remind.tistory.com/m/67
 
 https://hoypick.tistory.com/286
 
+https://velog.io/@kyaeim/series/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1-%EC%98%A4%EB%8A%98-%EB%AD%90-%EB%A8%B9%EC%A7%80
+
+
 
 
 ### <참고할 사이트 : HTML, CSS, JavaScript>
