@@ -41,3 +41,10 @@ CSS : https://dinfree.com/lecture/frontend/122_css_1.html
 JS : https://dinfree.com/lecture/frontend/123_js_1.html
 
 웹 사이트 템플릿 모음 : https://hwang-chive.tistory.com/78
+
+
+
+
+
+페이지 디자인/구현: 이준희, 임지수
+음식점 정보 크롤링, DB 구축: 변금서, 이수현
