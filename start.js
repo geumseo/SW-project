@@ -117,7 +117,7 @@ function make(){
 
 function map(){
   let point = calResult();
-  if(point == 8){
+  if(point == 7){
     location.href="sam.html";
   }
   else if(point == 1){
