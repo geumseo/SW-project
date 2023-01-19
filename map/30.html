@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9944227ea527595f099d7592abdb1b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e9944227ea527595f099d7592abdb1b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e9944227ea527595f099d7592abdb1b9 = L.map(
+                "map_e9944227ea527595f099d7592abdb1b9",
+                {
+                    center: [35.8797296, 128.4964884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6cb21d398d27621492edf86bf334881c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9944227ea527595f099d7592abdb1b9);
+        
+    
+            var marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da = L.markerClusterGroup(
+                {}
+            );
+            map_e9944227ea527595f099d7592abdb1b9.addLayer(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var marker_c06dc6dc8dc64200616aab4da8751405 = L.marker(
+                [35.1491561, 126.9236373],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_6fd74aac789583de17d2a828c9e40c0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c06dc6dc8dc64200616aab4da8751405.setIcon(icon_6fd74aac789583de17d2a828c9e40c0f);
+        
+    
+        var popup_5217b39c45071bf26b6975539e584cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddd8b8c3d60861e17a22cf1cd4803f2a = $(`<div id="html_ddd8b8c3d60861e17a22cf1cd4803f2a" style="width: 100.0%; height: 100.0%;">샤브렐라 광주동명점</strong></h5> 평점 : 4.7 <br> 리뷰수 : 27<br> 주소 :  광주 동구 제봉로110번길 17 1층 (지번) 장동 71-1 <br><a href="https://place.map.kakao.com/1496364493"target="_self">https://place.map.kakao.com/1496364493</a></div>`)[0];
+                popup_5217b39c45071bf26b6975539e584cb1.setContent(html_ddd8b8c3d60861e17a22cf1cd4803f2a);
+            
+        
+
+        marker_c06dc6dc8dc64200616aab4da8751405.bindPopup(popup_5217b39c45071bf26b6975539e584cb1)
+        ;
+
+        
+    
+    
+            var marker_966d688b5c034f1232f4255fbc3106c8 = L.marker(
+                [35.1517803, 126.9259096],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_c232e08f0311710db21b947b3cc46fb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_966d688b5c034f1232f4255fbc3106c8.setIcon(icon_c232e08f0311710db21b947b3cc46fb3);
+        
+    
+        var popup_056968d81ff0736249b8c22af8f9463f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b319cc4490648a43801ed3a99a69d79b = $(`<div id="html_b319cc4490648a43801ed3a99a69d79b" style="width: 100.0%; height: 100.0%;">규슈</strong></h5> 평점 : 4.3 <br> 리뷰수 : 126<br> 주소 :  광주 동구 동명로 47-3 (지번) 동명동 176-5 <br><a href="https://place.map.kakao.com/1811941780"target="_self">https://place.map.kakao.com/1811941780</a></div>`)[0];
+                popup_056968d81ff0736249b8c22af8f9463f.setContent(html_b319cc4490648a43801ed3a99a69d79b);
+            
+        
+
+        marker_966d688b5c034f1232f4255fbc3106c8.bindPopup(popup_056968d81ff0736249b8c22af8f9463f)
+        ;
+
+        
+    
+    
+            var marker_68f247b790af228743fb91b4510a49f9 = L.marker(
+                [35.1492989, 126.9226751],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_164445a363364106e33512793a0ce2e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68f247b790af228743fb91b4510a49f9.setIcon(icon_164445a363364106e33512793a0ce2e2);
+        
+    
+        var popup_9032f1ed6771548ded0acaee5c1a8cfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63f6e67404f84fc989a6495ea63b6336 = $(`<div id="html_63f6e67404f84fc989a6495ea63b6336" style="width: 100.0%; height: 100.0%;">야레타</strong></h5> 평점 : 4.0 <br> 리뷰수 : 30<br> 주소 :  광주 동구 장동로 1-2 1층 (지번) 장동 62-15 <br><a href="https://place.map.kakao.com/1429519259"target="_self">https://place.map.kakao.com/1429519259</a></div>`)[0];
+                popup_9032f1ed6771548ded0acaee5c1a8cfa.setContent(html_63f6e67404f84fc989a6495ea63b6336);
+            
+        
+
+        marker_68f247b790af228743fb91b4510a49f9.bindPopup(popup_9032f1ed6771548ded0acaee5c1a8cfa)
+        ;
+
+        
+    
+    
+            var marker_fee51bdee5ae18ef5ee12b26a7d98ccb = L.marker(
+                [35.1261638, 126.9153887],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_abef99175ec236bed9baf342f2c52078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fee51bdee5ae18ef5ee12b26a7d98ccb.setIcon(icon_abef99175ec236bed9baf342f2c52078);
+        
+    
+        var popup_4dda1200d9a67d06c6704028dd6754ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e33fbdab8d176bf4688ee405a31206 = $(`<div id="html_f8e33fbdab8d176bf4688ee405a31206" style="width: 100.0%; height: 100.0%;">코코샤브 광주봉선점(휴업중)</strong></h5> 평점 : 5.0 <br> 리뷰수 : 14<br> 주소 :  광주 남구 봉선2로 81 가로수빌딩 3층 (지번) 봉선동 156 <br><a href="https://place.map.kakao.com/1817325812"target="_self">https://place.map.kakao.com/1817325812</a></div>`)[0];
+                popup_4dda1200d9a67d06c6704028dd6754ac.setContent(html_f8e33fbdab8d176bf4688ee405a31206);
+            
+        
+
+        marker_fee51bdee5ae18ef5ee12b26a7d98ccb.bindPopup(popup_4dda1200d9a67d06c6704028dd6754ac)
+        ;
+
+        
+    
+    
+            var marker_ef626be21034c9f4e5de8d7f0ab20802 = L.marker(
+                [35.1493039, 126.8498367],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_a792c7dc92d4c83e9fc16e8586dea83e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef626be21034c9f4e5de8d7f0ab20802.setIcon(icon_a792c7dc92d4c83e9fc16e8586dea83e);
+        
+    
+        var popup_9fabb0f7d069a887842192dd4d28f9de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1f0a411d1bd009c918a2ad1af4625bc = $(`<div id="html_d1f0a411d1bd009c918a2ad1af4625bc" style="width: 100.0%; height: 100.0%;">더바른</strong></h5> 평점 : 4.1 <br> 리뷰수 : 56<br> 주소 :  광주 서구 상무중앙로28번길 4 세진빌딩 8층 (지번) 치평동 1254 <br><a href="https://place.map.kakao.com/26628829"target="_self">https://place.map.kakao.com/26628829</a></div>`)[0];
+                popup_9fabb0f7d069a887842192dd4d28f9de.setContent(html_d1f0a411d1bd009c918a2ad1af4625bc);
+            
+        
+
+        marker_ef626be21034c9f4e5de8d7f0ab20802.bindPopup(popup_9fabb0f7d069a887842192dd4d28f9de)
+        ;
+
+        
+    
+    
+            var marker_b4c8c1cad9edb842bb68aa24b1961d2e = L.marker(
+                [37.3420189, 127.065015],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_297d44fb2097e791782cf4cec074ffda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4c8c1cad9edb842bb68aa24b1961d2e.setIcon(icon_297d44fb2097e791782cf4cec074ffda);
+        
+    
+        var popup_e2d382312d126956c00c641da1d8ac67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb65d99e4b06300b0fd9ee97f6d2f492 = $(`<div id="html_cb65d99e4b06300b0fd9ee97f6d2f492" style="width: 100.0%; height: 100.0%;">꽃마름 광주동림점</strong></h5> 평점 : 4.0 <br> 리뷰수 : 20<br> 주소 :  광주 서구 하남대로 676 3층 (지번) 동천동 597 <br><a href="https://place.map.kakao.com/21072397"target="_self">https://place.map.kakao.com/21072397</a></div>`)[0];
+                popup_e2d382312d126956c00c641da1d8ac67.setContent(html_cb65d99e4b06300b0fd9ee97f6d2f492);
+            
+        
+
+        marker_b4c8c1cad9edb842bb68aa24b1961d2e.bindPopup(popup_e2d382312d126956c00c641da1d8ac67)
+        ;
+
+        
+    
+    
+            var marker_7b99d45e0729843ed4ecd3e0a4ec9204 = L.marker(
+                [35.1790229, 126.8943623],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_34c5a94788a8b5ea682e898537c1ba48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b99d45e0729843ed4ecd3e0a4ec9204.setIcon(icon_34c5a94788a8b5ea682e898537c1ba48);
+        
+    
+        var popup_72081929a418434cb1fc8c4bacc02bc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25920a7690969479f1c5b567d08e4e4e = $(`<div id="html_25920a7690969479f1c5b567d08e4e4e" style="width: 100.0%; height: 100.0%;">취향루</strong></h5> 평점 : 4.2 <br> 리뷰수 : 11<br> 주소 :  광주 북구 설죽로217번길 29 (지번) 용봉동 1377-4 <br><a href="https://place.map.kakao.com/24703149"target="_self">https://place.map.kakao.com/24703149</a></div>`)[0];
+                popup_72081929a418434cb1fc8c4bacc02bc1.setContent(html_25920a7690969479f1c5b567d08e4e4e);
+            
+        
+
+        marker_7b99d45e0729843ed4ecd3e0a4ec9204.bindPopup(popup_72081929a418434cb1fc8c4bacc02bc1)
+        ;
+
+        
+    
+    
+            var marker_6a8a8719f3abda2d3044bd5e40290a72 = L.marker(
+                [35.141141, 126.8734689],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_fd69bf3d12000b67aa3f9fdd41a83507 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a8a8719f3abda2d3044bd5e40290a72.setIcon(icon_fd69bf3d12000b67aa3f9fdd41a83507);
+        
+    
+        var popup_33c65dfacd4e0a5ed6f9022e2a0f1a96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_631b2557908625612f5ae485fb877096 = $(`<div id="html_631b2557908625612f5ae485fb877096" style="width: 100.0%; height: 100.0%;">천리향양꼬치 염주점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 17<br> 주소 :  광주 서구 염화로65번길 4-14 1층 (지번) 화정동 919-16 <br><a href="https://place.map.kakao.com/1886986235"target="_self">https://place.map.kakao.com/1886986235</a></div>`)[0];
+                popup_33c65dfacd4e0a5ed6f9022e2a0f1a96.setContent(html_631b2557908625612f5ae485fb877096);
+            
+        
+
+        marker_6a8a8719f3abda2d3044bd5e40290a72.bindPopup(popup_33c65dfacd4e0a5ed6f9022e2a0f1a96)
+        ;
+
+        
+    
+    
+            var marker_7dbb119e4643e1f706b968bfbf6dba87 = L.marker(
+                [35.1491561, 126.9236373],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_7f6acd3b02f9bbe6c737fe3425f5db36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7dbb119e4643e1f706b968bfbf6dba87.setIcon(icon_7f6acd3b02f9bbe6c737fe3425f5db36);
+        
+    
+        var popup_7c553c7b5bfc9ea70882d0ce1fbdea7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51c0f873a433ba4b1cb53286a3a88057 = $(`<div id="html_51c0f873a433ba4b1cb53286a3a88057" style="width: 100.0%; height: 100.0%;">샤브렐라 광주동명점</strong></h5> 평점 : 4.7 <br> 리뷰수 : 27<br> 주소 :  광주 동구 제봉로110번길 17 1층 (지번) 장동 71-1 <br><a href="https://place.map.kakao.com/1496364493"target="_self">https://place.map.kakao.com/1496364493</a></div>`)[0];
+                popup_7c553c7b5bfc9ea70882d0ce1fbdea7e.setContent(html_51c0f873a433ba4b1cb53286a3a88057);
+            
+        
+
+        marker_7dbb119e4643e1f706b968bfbf6dba87.bindPopup(popup_7c553c7b5bfc9ea70882d0ce1fbdea7e)
+        ;
+
+        
+    
+    
+            var marker_c939c702fff86c1b134fde1b04b7ca13 = L.marker(
+                [35.1517803, 126.9259096],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_6b19f16b31c4f8095228396ffbdb33e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c939c702fff86c1b134fde1b04b7ca13.setIcon(icon_6b19f16b31c4f8095228396ffbdb33e9);
+        
+    
+        var popup_871166f23cdaa37b9859aa3b69301caf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a712afbb01b348d57ab74c4285c674 = $(`<div id="html_05a712afbb01b348d57ab74c4285c674" style="width: 100.0%; height: 100.0%;">규슈</strong></h5> 평점 : 4.3 <br> 리뷰수 : 126<br> 주소 :  광주 동구 동명로 47-3 (지번) 동명동 176-5 <br><a href="https://place.map.kakao.com/1811941780"target="_self">https://place.map.kakao.com/1811941780</a></div>`)[0];
+                popup_871166f23cdaa37b9859aa3b69301caf.setContent(html_05a712afbb01b348d57ab74c4285c674);
+            
+        
+
+        marker_c939c702fff86c1b134fde1b04b7ca13.bindPopup(popup_871166f23cdaa37b9859aa3b69301caf)
+        ;
+
+        
+    
+    
+            var marker_b1ef97d4f9f4e5172b7a0d7ebcef8932 = L.marker(
+                [35.1492989, 126.9226751],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_f76f489e0a757003789bd728c3aecca8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1ef97d4f9f4e5172b7a0d7ebcef8932.setIcon(icon_f76f489e0a757003789bd728c3aecca8);
+        
+    
+        var popup_5f18d5bbd60bd006d881f5ac7d162b15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a061f5129b3739464a555b09e95f510 = $(`<div id="html_0a061f5129b3739464a555b09e95f510" style="width: 100.0%; height: 100.0%;">야레타</strong></h5> 평점 : 4.0 <br> 리뷰수 : 30<br> 주소 :  광주 동구 장동로 1-2 1층 (지번) 장동 62-15 <br><a href="https://place.map.kakao.com/1429519259"target="_self">https://place.map.kakao.com/1429519259</a></div>`)[0];
+                popup_5f18d5bbd60bd006d881f5ac7d162b15.setContent(html_0a061f5129b3739464a555b09e95f510);
+            
+        
+
+        marker_b1ef97d4f9f4e5172b7a0d7ebcef8932.bindPopup(popup_5f18d5bbd60bd006d881f5ac7d162b15)
+        ;
+
+        
+    
+    
+            var marker_f7f61065e7a540c51dc88930e082adf8 = L.marker(
+                [35.1261638, 126.9153887],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_d2798c180715d4dc59f3d1a1376035b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7f61065e7a540c51dc88930e082adf8.setIcon(icon_d2798c180715d4dc59f3d1a1376035b9);
+        
+    
+        var popup_015e50fe0a51b1646fb774131721d2d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9741e2798eceed317891d93d3f103af = $(`<div id="html_c9741e2798eceed317891d93d3f103af" style="width: 100.0%; height: 100.0%;">코코샤브 광주봉선점(휴업중)</strong></h5> 평점 : 5.0 <br> 리뷰수 : 14<br> 주소 :  광주 남구 봉선2로 81 가로수빌딩 3층 (지번) 봉선동 156 <br><a href="https://place.map.kakao.com/1817325812"target="_self">https://place.map.kakao.com/1817325812</a></div>`)[0];
+                popup_015e50fe0a51b1646fb774131721d2d7.setContent(html_c9741e2798eceed317891d93d3f103af);
+            
+        
+
+        marker_f7f61065e7a540c51dc88930e082adf8.bindPopup(popup_015e50fe0a51b1646fb774131721d2d7)
+        ;
+
+        
+    
+    
+            var marker_111d4a82c4a4864f047ac8bd011f0467 = L.marker(
+                [35.1493039, 126.8498367],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_72bf2952b22b7087d2b65b06ae1ff0f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_111d4a82c4a4864f047ac8bd011f0467.setIcon(icon_72bf2952b22b7087d2b65b06ae1ff0f6);
+        
+    
+        var popup_224aab79dc5a5b43e2b89f8eb8848f76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d955513926a466dcbc830ffa2c41ab5e = $(`<div id="html_d955513926a466dcbc830ffa2c41ab5e" style="width: 100.0%; height: 100.0%;">더바른</strong></h5> 평점 : 4.1 <br> 리뷰수 : 56<br> 주소 :  광주 서구 상무중앙로28번길 4 세진빌딩 8층 (지번) 치평동 1254 <br><a href="https://place.map.kakao.com/26628829"target="_self">https://place.map.kakao.com/26628829</a></div>`)[0];
+                popup_224aab79dc5a5b43e2b89f8eb8848f76.setContent(html_d955513926a466dcbc830ffa2c41ab5e);
+            
+        
+
+        marker_111d4a82c4a4864f047ac8bd011f0467.bindPopup(popup_224aab79dc5a5b43e2b89f8eb8848f76)
+        ;
+
+        
+    
+    
+            var marker_bc0e2168b8fd0852f3db26054173ff0c = L.marker(
+                [37.3420189, 127.065015],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_c65ac29389b80e7d224c8878844268ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc0e2168b8fd0852f3db26054173ff0c.setIcon(icon_c65ac29389b80e7d224c8878844268ff);
+        
+    
+        var popup_9f956e549669dab50ec78c2998428a67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e5798af22819bd7fe2fabe94981627b = $(`<div id="html_7e5798af22819bd7fe2fabe94981627b" style="width: 100.0%; height: 100.0%;">꽃마름 광주동림점</strong></h5> 평점 : 4.0 <br> 리뷰수 : 20<br> 주소 :  광주 서구 하남대로 676 3층 (지번) 동천동 597 <br><a href="https://place.map.kakao.com/21072397"target="_self">https://place.map.kakao.com/21072397</a></div>`)[0];
+                popup_9f956e549669dab50ec78c2998428a67.setContent(html_7e5798af22819bd7fe2fabe94981627b);
+            
+        
+
+        marker_bc0e2168b8fd0852f3db26054173ff0c.bindPopup(popup_9f956e549669dab50ec78c2998428a67)
+        ;
+
+        
+    
+    
+            var marker_2cee717691e78e17387c6fb768da4064 = L.marker(
+                [35.1790229, 126.8943623],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_1ada2dcc8dbbdaebdae96f8267bc9b78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2cee717691e78e17387c6fb768da4064.setIcon(icon_1ada2dcc8dbbdaebdae96f8267bc9b78);
+        
+    
+        var popup_e0c6f44ef028f5052edaf54f03110984 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_849ddbc2dfee1102b5ee34f8218ee191 = $(`<div id="html_849ddbc2dfee1102b5ee34f8218ee191" style="width: 100.0%; height: 100.0%;">취향루</strong></h5> 평점 : 4.2 <br> 리뷰수 : 11<br> 주소 :  광주 북구 설죽로217번길 29 (지번) 용봉동 1377-4 <br><a href="https://place.map.kakao.com/24703149"target="_self">https://place.map.kakao.com/24703149</a></div>`)[0];
+                popup_e0c6f44ef028f5052edaf54f03110984.setContent(html_849ddbc2dfee1102b5ee34f8218ee191);
+            
+        
+
+        marker_2cee717691e78e17387c6fb768da4064.bindPopup(popup_e0c6f44ef028f5052edaf54f03110984)
+        ;
+
+        
+    
+    
+            var marker_ed8f384247411de54ac42bfef428b726 = L.marker(
+                [35.141141, 126.8734689],
+                {}
+            ).addTo(marker_cluster_73c295f16fc5339c2fdc1adb9a5ed5da);
+        
+    
+            var icon_27eb6872a90a3a1c507ae6c3262a82f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed8f384247411de54ac42bfef428b726.setIcon(icon_27eb6872a90a3a1c507ae6c3262a82f7);
+        
+    
+        var popup_ccf4425819bb78d10dcb54d78b914729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_546cca6116b6d452cf1638594c53ba05 = $(`<div id="html_546cca6116b6d452cf1638594c53ba05" style="width: 100.0%; height: 100.0%;">천리향양꼬치 염주점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 17<br> 주소 :  광주 서구 염화로65번길 4-14 1층 (지번) 화정동 919-16 <br><a href="https://place.map.kakao.com/1886986235"target="_self">https://place.map.kakao.com/1886986235</a></div>`)[0];
+                popup_ccf4425819bb78d10dcb54d78b914729.setContent(html_546cca6116b6d452cf1638594c53ba05);
+            
+        
+
+        marker_ed8f384247411de54ac42bfef428b726.bindPopup(popup_ccf4425819bb78d10dcb54d78b914729)
+        ;
+
+        
+    
+</script>
+</html>

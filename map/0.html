@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0402b0333fc6cf687bd96d2f32b891f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0402b0333fc6cf687bd96d2f32b891f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0402b0333fc6cf687bd96d2f32b891f9 = L.map(
+                "map_0402b0333fc6cf687bd96d2f32b891f9",
+                {
+                    center: [35.8797296, 128.4964884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8de8b32921bc105a08b2bce3b4e1cdc6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0402b0333fc6cf687bd96d2f32b891f9);
+        
+    
+            var marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa = L.markerClusterGroup(
+                {}
+            );
+            map_0402b0333fc6cf687bd96d2f32b891f9.addLayer(marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa);
+        
+    
+            var marker_13a1eb4039fd008df320f3f4bf04b6ac = L.marker(
+                [35.1327923, 126.9577716],
+                {}
+            ).addTo(marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa);
+        
+    
+            var icon_f97dd1c793ad0c5b8d0ed90360dc5c59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13a1eb4039fd008df320f3f4bf04b6ac.setIcon(icon_f97dd1c793ad0c5b8d0ed90360dc5c59);
+        
+    
+        var popup_222f883475edd91181f0476372930e65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb41c686df747f803da69af3ffdceca7 = $(`<div id="html_bb41c686df747f803da69af3ffdceca7" style="width: 100.0%; height: 100.0%;">담양국수</strong></h5> 평점 : 4.0 <br> 리뷰수 : 42<br> 주소 :  광주 동구 증심사길30번길 28-3 1층 (지번) 운림동 985 <br><a href="https://place.map.kakao.com/15276969"target="_self">https://place.map.kakao.com/15276969</a></div>`)[0];
+                popup_222f883475edd91181f0476372930e65.setContent(html_bb41c686df747f803da69af3ffdceca7);
+            
+        
+
+        marker_13a1eb4039fd008df320f3f4bf04b6ac.bindPopup(popup_222f883475edd91181f0476372930e65)
+        ;
+
+        
+    
+    
+            var marker_d1413aaa74d83e2bee9d710f5f727639 = L.marker(
+                [35.1331476, 126.9590498],
+                {}
+            ).addTo(marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa);
+        
+    
+            var icon_20cb6c48f4aa887ab1c0fe9d89754601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1413aaa74d83e2bee9d710f5f727639.setIcon(icon_20cb6c48f4aa887ab1c0fe9d89754601);
+        
+    
+        var popup_ef0382b7c70acc7f0e25a2ef80b2885f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b50e74c6c4427ad2062565d85f536d7d = $(`<div id="html_b50e74c6c4427ad2062565d85f536d7d" style="width: 100.0%; height: 100.0%;">대호식당</strong></h5> 평점 : 4.5 <br> 리뷰수 : 16<br> 주소 :  광주 동구 증심사길30번길 37 1층 (지번) 운림동 992 <br><a href="https://place.map.kakao.com/16748311"target="_self">https://place.map.kakao.com/16748311</a></div>`)[0];
+                popup_ef0382b7c70acc7f0e25a2ef80b2885f.setContent(html_b50e74c6c4427ad2062565d85f536d7d);
+            
+        
+
+        marker_d1413aaa74d83e2bee9d710f5f727639.bindPopup(popup_ef0382b7c70acc7f0e25a2ef80b2885f)
+        ;
+
+        
+    
+    
+            var marker_f6c6c8cbd56cf086de09555844cce5d6 = L.marker(
+                [35.1538364, 126.9325446],
+                {}
+            ).addTo(marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa);
+        
+    
+            var icon_efee6d7241e82cf3bd0cfe4b62b9c8fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6c6c8cbd56cf086de09555844cce5d6.setIcon(icon_efee6d7241e82cf3bd0cfe4b62b9c8fc);
+        
+    
+        var popup_8230f30f8fd8f06765e016e79f96b936 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed5f835c0e95420c7bf6af139280e4a5 = $(`<div id="html_ed5f835c0e95420c7bf6af139280e4a5" style="width: 100.0%; height: 100.0%;">도리깨마당</strong></h5> 평점 : 4.2 <br> 리뷰수 : 34<br> 주소 :  광주 동구 필문대로191번길 5-21 (지번) 산수동 522-54 <br><a href="https://place.map.kakao.com/16552391"target="_self">https://place.map.kakao.com/16552391</a></div>`)[0];
+                popup_8230f30f8fd8f06765e016e79f96b936.setContent(html_ed5f835c0e95420c7bf6af139280e4a5);
+            
+        
+
+        marker_f6c6c8cbd56cf086de09555844cce5d6.bindPopup(popup_8230f30f8fd8f06765e016e79f96b936)
+        ;
+
+        
+    
+    
+            var marker_a05694d79fb840d876ea69ec1b63252f = L.marker(
+                [35.1494165, 126.9236283],
+                {}
+            ).addTo(marker_cluster_f94317cd3fc63b23a6ad4ccf7e3976aa);
+        
+    
+            var icon_e59ee95693419a820cf54ffe65e61783 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a05694d79fb840d876ea69ec1b63252f.setIcon(icon_e59ee95693419a820cf54ffe65e61783);
+        
+    
+        var popup_9ed16f89cfb292dc21b4aa41b9ecaf7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70e3006b95b9bf695d37467c801447fd = $(`<div id="html_70e3006b95b9bf695d37467c801447fd" style="width: 100.0%; height: 100.0%;">홍문장칼집</strong></h5> 평점 : 5.0 <br> 리뷰수 : 19<br> 주소 :  광주 동구 동계천로 132 1층 (지번) 장동 67-2 <br><a href="https://place.map.kakao.com/1374391484"target="_self">https://place.map.kakao.com/1374391484</a></div>`)[0];
+                popup_9ed16f89cfb292dc21b4aa41b9ecaf7b.setContent(html_70e3006b95b9bf695d37467c801447fd);
+            
+        
+
+        marker_a05694d79fb840d876ea69ec1b63252f.bindPopup(popup_9ed16f89cfb292dc21b4aa41b9ecaf7b)
+        ;
+
+        
+    
+</script>
+</html>

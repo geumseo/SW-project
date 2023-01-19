@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c7ab68b7345475bbd7376f153886fd7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c7ab68b7345475bbd7376f153886fd7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c7ab68b7345475bbd7376f153886fd7 = L.map(
+                "map_1c7ab68b7345475bbd7376f153886fd7",
+                {
+                    center: [35.8797296, 128.4964884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52413f6a654cbc97073fef6a8c6603bd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c7ab68b7345475bbd7376f153886fd7);
+        
+    
+            var marker_cluster_27659cd5d24218d8ed24259e95b45979 = L.markerClusterGroup(
+                {}
+            );
+            map_1c7ab68b7345475bbd7376f153886fd7.addLayer(marker_cluster_27659cd5d24218d8ed24259e95b45979);
+        
+    
+            var marker_2168dcbea745df6c4ce30fd4fce2fe6c = L.marker(
+                [35.1474323, 126.9144075],
+                {}
+            ).addTo(marker_cluster_27659cd5d24218d8ed24259e95b45979);
+        
+    
+            var icon_6a36c8f8e32fabc5c4c500e12a772eda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2168dcbea745df6c4ce30fd4fce2fe6c.setIcon(icon_6a36c8f8e32fabc5c4c500e12a772eda);
+        
+    
+        var popup_b8544768f01a5c87fe5a5541d4199df3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ed143e4e94bde23062c17ffdcc6e30 = $(`<div id="html_78ed143e4e94bde23062c17ffdcc6e30" style="width: 100.0%; height: 100.0%;">아카이타코</strong></h5> 평점 : 4.1 <br> 리뷰수 : 103<br> 주소 :  광주 동구 중앙로160번길 12-1 (지번) 황금동 111 <br><a href="https://place.map.kakao.com/16458481"target="_self">https://place.map.kakao.com/16458481</a></div>`)[0];
+                popup_b8544768f01a5c87fe5a5541d4199df3.setContent(html_78ed143e4e94bde23062c17ffdcc6e30);
+            
+        
+
+        marker_2168dcbea745df6c4ce30fd4fce2fe6c.bindPopup(popup_b8544768f01a5c87fe5a5541d4199df3)
+        ;
+
+        
+    
+    
+            var marker_3268fee2d8ddac721a4e0355b6decfbb = L.marker(
+                [35.1495231, 126.9225372],
+                {}
+            ).addTo(marker_cluster_27659cd5d24218d8ed24259e95b45979);
+        
+    
+            var icon_08fa90f59a2ff300032d1d6693f8f175 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3268fee2d8ddac721a4e0355b6decfbb.setIcon(icon_08fa90f59a2ff300032d1d6693f8f175);
+        
+    
+        var popup_4d4f598f15e51a241e3f570b08382c23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faa6e83d43f8118f6d6c7839da22daca = $(`<div id="html_faa6e83d43f8118f6d6c7839da22daca" style="width: 100.0%; height: 100.0%;">오꼬다꼬</strong></h5> 평점 : 4.3 <br> 리뷰수 : 23<br> 주소 :  광주 동구 제봉로 126 1층 (지번) 장동 62-19 <br><a href="https://place.map.kakao.com/955197210"target="_self">https://place.map.kakao.com/955197210</a></div>`)[0];
+                popup_4d4f598f15e51a241e3f570b08382c23.setContent(html_faa6e83d43f8118f6d6c7839da22daca);
+            
+        
+
+        marker_3268fee2d8ddac721a4e0355b6decfbb.bindPopup(popup_4d4f598f15e51a241e3f570b08382c23)
+        ;
+
+        
+    
+    
+            var marker_6025f012b7f7b048e37044f815718bff = L.marker(
+                [35.171455, 126.8682132],
+                {}
+            ).addTo(marker_cluster_27659cd5d24218d8ed24259e95b45979);
+        
+    
+            var icon_d96d88c25569f2fe4295092cbe28eef8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6025f012b7f7b048e37044f815718bff.setIcon(icon_d96d88c25569f2fe4295092cbe28eef8);
+        
+    
+        var popup_fe3a830b3ae4d24fdbea551a904546c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78a70895aace8a2b47d6a7487aeab3a6 = $(`<div id="html_78a70895aace8a2b47d6a7487aeab3a6" style="width: 100.0%; height: 100.0%;">백스비어 광주동천점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 10<br> 주소 :  광주 서구 하남대로 690 1층 (지번) 동천동 623 <br><a href="https://place.map.kakao.com/2027979946"target="_self">https://place.map.kakao.com/2027979946</a></div>`)[0];
+                popup_fe3a830b3ae4d24fdbea551a904546c9.setContent(html_78a70895aace8a2b47d6a7487aeab3a6);
+            
+        
+
+        marker_6025f012b7f7b048e37044f815718bff.bindPopup(popup_fe3a830b3ae4d24fdbea551a904546c9)
+        ;
+
+        
+    
+</script>
+</html>

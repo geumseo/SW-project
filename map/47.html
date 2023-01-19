@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ce270f3581f13becfae8dd446f8c84b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ce270f3581f13becfae8dd446f8c84b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ce270f3581f13becfae8dd446f8c84b = L.map(
+                "map_5ce270f3581f13becfae8dd446f8c84b",
+                {
+                    center: [35.8797296, 128.4964884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93378a6fbc23ac6d0d84368e8427eb29 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5ce270f3581f13becfae8dd446f8c84b);
+        
+    
+            var marker_cluster_1d2aabf3f6b89445be27a9d13800e59b = L.markerClusterGroup(
+                {}
+            );
+            map_5ce270f3581f13becfae8dd446f8c84b.addLayer(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var marker_f118bf2bb9c6bf0e864faac308cb119a = L.marker(
+                [35.1513572, 126.9221069],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_f8361f55ce1405e9b2b02416f319cd04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f118bf2bb9c6bf0e864faac308cb119a.setIcon(icon_f8361f55ce1405e9b2b02416f319cd04);
+        
+    
+        var popup_56c2a2babd9a9deddb8af05160407a44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_165c6be7ea9531df432d3218d166a591 = $(`<div id="html_165c6be7ea9531df432d3218d166a591" style="width: 100.0%; height: 100.0%;">900달러</strong></h5> 평점 : 4.1 <br> 리뷰수 : 169<br> 주소 :  광주 동구 동계천로 103-2 (지번) 동명동 200-223 <br><a href="https://place.map.kakao.com/941784426"target="_self">https://place.map.kakao.com/941784426</a></div>`)[0];
+                popup_56c2a2babd9a9deddb8af05160407a44.setContent(html_165c6be7ea9531df432d3218d166a591);
+            
+        
+
+        marker_f118bf2bb9c6bf0e864faac308cb119a.bindPopup(popup_56c2a2babd9a9deddb8af05160407a44)
+        ;
+
+        
+    
+    
+            var marker_7eff814de3a396254e4f0863b75cdc92 = L.marker(
+                [35.1506006, 126.9229795],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_6a8cafb08733c080cb6675d6744a5591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7eff814de3a396254e4f0863b75cdc92.setIcon(icon_6a8cafb08733c080cb6675d6744a5591);
+        
+    
+        var popup_c48e3e38c5f72e87b22bb68fe7edac50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e1ac85e9d3cd9a267197f897f22263e = $(`<div id="html_0e1ac85e9d3cd9a267197f897f22263e" style="width: 100.0%; height: 100.0%;">티이티디</strong></h5> 평점 : 4.5 <br> 리뷰수 : 104<br> 주소 :  광주 동구 동계천로 115 (지번) 동명동 154-118 <br><a href="https://place.map.kakao.com/835466291"target="_self">https://place.map.kakao.com/835466291</a></div>`)[0];
+                popup_c48e3e38c5f72e87b22bb68fe7edac50.setContent(html_0e1ac85e9d3cd9a267197f897f22263e);
+            
+        
+
+        marker_7eff814de3a396254e4f0863b75cdc92.bindPopup(popup_c48e3e38c5f72e87b22bb68fe7edac50)
+        ;
+
+        
+    
+    
+            var marker_bd907d645fe10164f5ecba85d9e08a42 = L.marker(
+                [35.1488204, 126.9186428],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_56a055a61f3992643dd71555dc182f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd907d645fe10164f5ecba85d9e08a42.setIcon(icon_56a055a61f3992643dd71555dc182f67);
+        
+    
+        var popup_e95ab7fc522add8b0e702cf441bb843a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a8a95e64d82c6e20f7850e7a05b6b13 = $(`<div id="html_8a8a95e64d82c6e20f7850e7a05b6b13" style="width: 100.0%; height: 100.0%;">고피자 광주금남로점</strong></h5> 평점 : 4.0 <br> 리뷰수 : 11<br> 주소 :  광주 동구 중앙로196번길 31 (지번) 대의동 83-2 <br><a href="https://place.map.kakao.com/561970790"target="_self">https://place.map.kakao.com/561970790</a></div>`)[0];
+                popup_e95ab7fc522add8b0e702cf441bb843a.setContent(html_8a8a95e64d82c6e20f7850e7a05b6b13);
+            
+        
+
+        marker_bd907d645fe10164f5ecba85d9e08a42.bindPopup(popup_e95ab7fc522add8b0e702cf441bb843a)
+        ;
+
+        
+    
+    
+            var marker_a33e4fec8a02e961ff522eb3f0f157b5 = L.marker(
+                [35.1497473, 126.9236273],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_442312f20f02f4e57e8a16959e84a387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a33e4fec8a02e961ff522eb3f0f157b5.setIcon(icon_442312f20f02f4e57e8a16959e84a387);
+        
+    
+        var popup_b89aa8592941860c7fc2eeefdf7dd1a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42fdd2ef3ed0996ef69fee8bf09c9cb0 = $(`<div id="html_42fdd2ef3ed0996ef69fee8bf09c9cb0" style="width: 100.0%; height: 100.0%;">OG</strong></h5> 평점 : 4.0 <br> 리뷰수 : 15<br> 주소 :  광주 동구 동계천로 128 지하 (지번) 장동 59-6 <br><a href="https://place.map.kakao.com/1555493834"target="_self">https://place.map.kakao.com/1555493834</a></div>`)[0];
+                popup_b89aa8592941860c7fc2eeefdf7dd1a7.setContent(html_42fdd2ef3ed0996ef69fee8bf09c9cb0);
+            
+        
+
+        marker_a33e4fec8a02e961ff522eb3f0f157b5.bindPopup(popup_b89aa8592941860c7fc2eeefdf7dd1a7)
+        ;
+
+        
+    
+    
+            var marker_3fe6a69b76d0abdc8ec7ef2e7e85fc93 = L.marker(
+                [35.149047, 126.9249622],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_f91ab77a683dec75ec5c82aeb9d511b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3fe6a69b76d0abdc8ec7ef2e7e85fc93.setIcon(icon_f91ab77a683dec75ec5c82aeb9d511b2);
+        
+    
+        var popup_44fc798d9285ef144b5974a44ea650c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed6fdd5f1a49aaf6b25f939572f1e40c = $(`<div id="html_ed6fdd5f1a49aaf6b25f939572f1e40c" style="width: 100.0%; height: 100.0%;">롱타임 노씨 광주동명점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 22<br> 주소 :  광주 동구 동계천로 143 2층 (지번) 동명동 154-73 <br><a href="https://place.map.kakao.com/2054522587"target="_self">https://place.map.kakao.com/2054522587</a></div>`)[0];
+                popup_44fc798d9285ef144b5974a44ea650c7.setContent(html_ed6fdd5f1a49aaf6b25f939572f1e40c);
+            
+        
+
+        marker_3fe6a69b76d0abdc8ec7ef2e7e85fc93.bindPopup(popup_44fc798d9285ef144b5974a44ea650c7)
+        ;
+
+        
+    
+    
+            var marker_e4f1372f1cb79c697a1aac8ddf9fe033 = L.marker(
+                [35.1379201, 126.9147214],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_c5602b1b0ca31a1a4d059703627edfed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4f1372f1cb79c697a1aac8ddf9fe033.setIcon(icon_c5602b1b0ca31a1a4d059703627edfed);
+        
+    
+        var popup_1d889854849a2abe93034a6906819373 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5219e91c99e1e891266b8ef93dfeaa5d = $(`<div id="html_5219e91c99e1e891266b8ef93dfeaa5d" style="width: 100.0%; height: 100.0%;">허슬피자</strong></h5> 평점 : 4.2 <br> 리뷰수 : 142<br> 주소 :  광주 남구 백서로 58-1 1층 (지번) 양림동 93-11 <br><a href="https://place.map.kakao.com/1617380045"target="_self">https://place.map.kakao.com/1617380045</a></div>`)[0];
+                popup_1d889854849a2abe93034a6906819373.setContent(html_5219e91c99e1e891266b8ef93dfeaa5d);
+            
+        
+
+        marker_e4f1372f1cb79c697a1aac8ddf9fe033.bindPopup(popup_1d889854849a2abe93034a6906819373)
+        ;
+
+        
+    
+    
+            var marker_398eac9eaca4c54e7427b365bd39c2a5 = L.marker(
+                [35.1322791, 126.9102867],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_73185a97034f674a0749138acf865c1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_398eac9eaca4c54e7427b365bd39c2a5.setIcon(icon_73185a97034f674a0749138acf865c1b);
+        
+    
+        var popup_a1ef8e427ce60f8b55f47f8be847d83d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fc0ffda8d9499cd6e83a8dbcaa2b9c = $(`<div id="html_68fc0ffda8d9499cd6e83a8dbcaa2b9c" style="width: 100.0%; height: 100.0%;">피자오래 남구봉선점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 26<br> 주소 :  광주 남구 대남대로139번길 15-1 1층 (지번) 봉선동 1129-9 <br><a href="https://place.map.kakao.com/1556207187"target="_self">https://place.map.kakao.com/1556207187</a></div>`)[0];
+                popup_a1ef8e427ce60f8b55f47f8be847d83d.setContent(html_68fc0ffda8d9499cd6e83a8dbcaa2b9c);
+            
+        
+
+        marker_398eac9eaca4c54e7427b365bd39c2a5.bindPopup(popup_a1ef8e427ce60f8b55f47f8be847d83d)
+        ;
+
+        
+    
+    
+            var marker_ccb3f602a4f203df1211d4558ce46da6 = L.marker(
+                [35.1737119, 126.9133798],
+                {}
+            ).addTo(marker_cluster_1d2aabf3f6b89445be27a9d13800e59b);
+        
+    
+            var icon_ac4f32891e4ca24934e5199050d7e6c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccb3f602a4f203df1211d4558ce46da6.setIcon(icon_ac4f32891e4ca24934e5199050d7e6c8);
+        
+    
+        var popup_83ea94e983cc902b9b8d6f8b4ab1d4e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3355956fd47722d5a86ea86b568c394c = $(`<div id="html_3355956fd47722d5a86ea86b568c394c" style="width: 100.0%; height: 100.0%;">피자먹다 전대점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 15<br> 주소 :  광주 북구 서방로 1-1 1층 (지번) 중흥동 360-6 <br><a href="https://place.map.kakao.com/1942204809"target="_self">https://place.map.kakao.com/1942204809</a></div>`)[0];
+                popup_83ea94e983cc902b9b8d6f8b4ab1d4e2.setContent(html_3355956fd47722d5a86ea86b568c394c);
+            
+        
+
+        marker_ccb3f602a4f203df1211d4558ce46da6.bindPopup(popup_83ea94e983cc902b9b8d6f8b4ab1d4e2)
+        ;
+
+        
+    
+</script>
+</html>
