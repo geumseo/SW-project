@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a77c8cc0313c5266f16366ac9ccc2c8f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a77c8cc0313c5266f16366ac9ccc2c8f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a77c8cc0313c5266f16366ac9ccc2c8f = L.map(
+                "map_a77c8cc0313c5266f16366ac9ccc2c8f",
+                {
+                    center: [35.8797296, 128.4964884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daa49cb37276aaf4fce4c14a02c14356 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a77c8cc0313c5266f16366ac9ccc2c8f);
+        
+    
+            var marker_cluster_917efd1d25187a47303a35cb4cb0e223 = L.markerClusterGroup(
+                {}
+            );
+            map_a77c8cc0313c5266f16366ac9ccc2c8f.addLayer(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var marker_7855672bab215fb672e83d4928a7801b = L.marker(
+                [35.1323959, 126.9444683],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_b7a833058e256d9317f9f2a404805e1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7855672bab215fb672e83d4928a7801b.setIcon(icon_b7a833058e256d9317f9f2a404805e1d);
+        
+    
+        var popup_f31db0efe1a9b539f5d02e9a85ea45df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_748aefe9590d6c12fc46991088a7c266 = $(`<div id="html_748aefe9590d6c12fc46991088a7c266" style="width: 100.0%; height: 100.0%;">운림신짬뽕</strong></h5> 평점 : 4.3 <br> 리뷰수 : 68<br> 주소 :  광주 동구 의재로 153 (지번) 운림동 859-7 <br><a href="https://place.map.kakao.com/860862211"target="_self">https://place.map.kakao.com/860862211</a></div>`)[0];
+                popup_f31db0efe1a9b539f5d02e9a85ea45df.setContent(html_748aefe9590d6c12fc46991088a7c266);
+            
+        
+
+        marker_7855672bab215fb672e83d4928a7801b.bindPopup(popup_f31db0efe1a9b539f5d02e9a85ea45df)
+        ;
+
+        
+    
+    
+            var marker_f01dddd52b0997c6e04d545758c23fb2 = L.marker(
+                [35.1470991, 126.9231321],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_2cf061708b6d95dbcc736f8020826e1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f01dddd52b0997c6e04d545758c23fb2.setIcon(icon_2cf061708b6d95dbcc736f8020826e1d);
+        
+    
+        var popup_a1d7d870e563a390a9fdf1e3a62668af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_851ac4882ed417b0549188bd23c6dc3f = $(`<div id="html_851ac4882ed417b0549188bd23c6dc3f" style="width: 100.0%; height: 100.0%;">열도지</strong></h5> 평점 : 4.3 <br> 리뷰수 : 185<br> 주소 :  광주 동구 제봉로82번길 17 (지번) 서석동 41-3 <br><a href="https://place.map.kakao.com/451615583"target="_self">https://place.map.kakao.com/451615583</a></div>`)[0];
+                popup_a1d7d870e563a390a9fdf1e3a62668af.setContent(html_851ac4882ed417b0549188bd23c6dc3f);
+            
+        
+
+        marker_f01dddd52b0997c6e04d545758c23fb2.bindPopup(popup_a1d7d870e563a390a9fdf1e3a62668af)
+        ;
+
+        
+    
+    
+            var marker_4fb769c843d68a5fc0efb88a07821daf = L.marker(
+                [35.1505413, 126.9133159],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_b8012b0f5e47c0f04acdf532e9303b03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fb769c843d68a5fc0efb88a07821daf.setIcon(icon_b8012b0f5e47c0f04acdf532e9303b03);
+        
+    
+        var popup_cec9cdeda9ccccd43488c165493e7be1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_495c0754057d314132e8a4ec928680ee = $(`<div id="html_495c0754057d314132e8a4ec928680ee" style="width: 100.0%; height: 100.0%;">신락원 본점</strong></h5> 평점 : 4.2 <br> 리뷰수 : 33<br> 주소 :  광주 동구 충장로 45-5 (지번) 충장로5가 42 <br><a href="https://place.map.kakao.com/24752266"target="_self">https://place.map.kakao.com/24752266</a></div>`)[0];
+                popup_cec9cdeda9ccccd43488c165493e7be1.setContent(html_495c0754057d314132e8a4ec928680ee);
+            
+        
+
+        marker_4fb769c843d68a5fc0efb88a07821daf.bindPopup(popup_cec9cdeda9ccccd43488c165493e7be1)
+        ;
+
+        
+    
+    
+            var marker_e0e15a0a21e0f34e709d5a7a8c138a65 = L.marker(
+                [35.1520375, 126.9333934],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_c3c4f7156ced6ccca0d04464cb033c32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0e15a0a21e0f34e709d5a7a8c138a65.setIcon(icon_c3c4f7156ced6ccca0d04464cb033c32);
+        
+    
+        var popup_441f54e1de910102298a5d44717a6dc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_604c92794fc924a09f6ae032723face1 = $(`<div id="html_604c92794fc924a09f6ae032723face1" style="width: 100.0%; height: 100.0%;">밤실짬뽕</strong></h5> 평점 : 4.0 <br> 리뷰수 : 24<br> 주소 :  광주 동구 필문대로205번길 21 (지번) 지산동 712-28 <br><a href="https://place.map.kakao.com/742976997"target="_self">https://place.map.kakao.com/742976997</a></div>`)[0];
+                popup_441f54e1de910102298a5d44717a6dc1.setContent(html_604c92794fc924a09f6ae032723face1);
+            
+        
+
+        marker_e0e15a0a21e0f34e709d5a7a8c138a65.bindPopup(popup_441f54e1de910102298a5d44717a6dc1)
+        ;
+
+        
+    
+    
+            var marker_b77489c71d095d39359ead8220f32962 = L.marker(
+                [35.1467723, 126.9226733],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_f1483242d3c0549db73b6926ee47b23a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b77489c71d095d39359ead8220f32962.setIcon(icon_f1483242d3c0549db73b6926ee47b23a);
+        
+    
+        var popup_13cb1851586efdff5c5ecf8c88449cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ce19d5d2bdad943d7e39c9db7955020 = $(`<div id="html_9ce19d5d2bdad943d7e39c9db7955020" style="width: 100.0%; height: 100.0%;">말리화</strong></h5> 평점 : 4.0 <br> 리뷰수 : 31<br> 주소 :  광주 동구 제봉로82번길 13-5 (지번) 서석동 42-15 <br><a href="https://place.map.kakao.com/7860453"target="_self">https://place.map.kakao.com/7860453</a></div>`)[0];
+                popup_13cb1851586efdff5c5ecf8c88449cfc.setContent(html_9ce19d5d2bdad943d7e39c9db7955020);
+            
+        
+
+        marker_b77489c71d095d39359ead8220f32962.bindPopup(popup_13cb1851586efdff5c5ecf8c88449cfc)
+        ;
+
+        
+    
+    
+            var marker_7e81d5625c17618c632cf49c3c58b3d0 = L.marker(
+                [35.1504993, 126.9226439],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_0454f7d5762f505b99f9da22d06db4d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7e81d5625c17618c632cf49c3c58b3d0.setIcon(icon_0454f7d5762f505b99f9da22d06db4d7);
+        
+    
+        var popup_f3df80a37abc1737341f91c8ce8cac89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2da42afac98af6fb4abc75af7002c1d = $(`<div id="html_c2da42afac98af6fb4abc75af7002c1d" style="width: 100.0%; height: 100.0%;">청주</strong></h5> 평점 : 4.3 <br> 리뷰수 : 122<br> 주소 :  광주 동구 제봉로138번길 14-1 1층 (지번) 장동 58-18 <br><a href="https://place.map.kakao.com/378584556"target="_self">https://place.map.kakao.com/378584556</a></div>`)[0];
+                popup_f3df80a37abc1737341f91c8ce8cac89.setContent(html_c2da42afac98af6fb4abc75af7002c1d);
+            
+        
+
+        marker_7e81d5625c17618c632cf49c3c58b3d0.bindPopup(popup_f3df80a37abc1737341f91c8ce8cac89)
+        ;
+
+        
+    
+    
+            var marker_68022774b98ba87dcd14593a27929a91 = L.marker(
+                [35.1457747, 126.924315],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_9152dbba90384333b357cbfd0c4e38b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68022774b98ba87dcd14593a27929a91.setIcon(icon_9152dbba90384333b357cbfd0c4e38b6);
+        
+    
+        var popup_6bde35d67a1442c9567761f0c3281fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31325221c14beaf42dc0244fed0b2ff7 = $(`<div id="html_31325221c14beaf42dc0244fed0b2ff7" style="width: 100.0%; height: 100.0%;">삼미관</strong></h5> 평점 : 4.3 <br> 리뷰수 : 29<br> 주소 :  광주 동구 백서로189번길 14-32 (지번) 서석동 18-3 <br><a href="https://place.map.kakao.com/21312809"target="_self">https://place.map.kakao.com/21312809</a></div>`)[0];
+                popup_6bde35d67a1442c9567761f0c3281fa7.setContent(html_31325221c14beaf42dc0244fed0b2ff7);
+            
+        
+
+        marker_68022774b98ba87dcd14593a27929a91.bindPopup(popup_6bde35d67a1442c9567761f0c3281fa7)
+        ;
+
+        
+    
+    
+            var marker_5893755a7d65d3c56dfced6c691ba329 = L.marker(
+                [35.14421919999999, 126.915451],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_b9b4e1ba66880d9e26eadda52dd81912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5893755a7d65d3c56dfced6c691ba329.setIcon(icon_b9b4e1ba66880d9e26eadda52dd81912);
+        
+    
+        var popup_3351e73075a78b2e12c8c5f387adb38d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2e4da9495940144fad24da780fc5129 = $(`<div id="html_e2e4da9495940144fad24da780fc5129" style="width: 100.0%; height: 100.0%;">만리향</strong></h5> 평점 : 5.0 <br> 리뷰수 : 11<br> 주소 :  광주 동구 문화전당로35번길 38 (지번) 불로동 186-5 <br><a href="https://place.map.kakao.com/290591772"target="_self">https://place.map.kakao.com/290591772</a></div>`)[0];
+                popup_3351e73075a78b2e12c8c5f387adb38d.setContent(html_e2e4da9495940144fad24da780fc5129);
+            
+        
+
+        marker_5893755a7d65d3c56dfced6c691ba329.bindPopup(popup_3351e73075a78b2e12c8c5f387adb38d)
+        ;
+
+        
+    
+    
+            var marker_29f662d5a9ca7b12012eb67e035526e0 = L.marker(
+                [35.1500501, 126.9255456],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_07a7dca1820811536061211f4eefafe2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29f662d5a9ca7b12012eb67e035526e0.setIcon(icon_07a7dca1820811536061211f4eefafe2);
+        
+    
+        var popup_11e4f907a2a4e9d19d74061f8a37b108 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_547975f7d201d542092f9406ab93ebea = $(`<div id="html_547975f7d201d542092f9406ab93ebea" style="width: 100.0%; height: 100.0%;">온우</strong></h5> 평점 : 5.0 <br> 리뷰수 : 15<br> 주소 :  광주 동구 동명로14번길 32 1층 (지번) 동명동 66-2 <br><a href="https://place.map.kakao.com/94503725"target="_self">https://place.map.kakao.com/94503725</a></div>`)[0];
+                popup_11e4f907a2a4e9d19d74061f8a37b108.setContent(html_547975f7d201d542092f9406ab93ebea);
+            
+        
+
+        marker_29f662d5a9ca7b12012eb67e035526e0.bindPopup(popup_11e4f907a2a4e9d19d74061f8a37b108)
+        ;
+
+        
+    
+    
+            var marker_f1e3304657f42926c1fb4c5f7ecbdf10 = L.marker(
+                [35.1466958, 126.9171191],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_0cb67d4a382082a015164ffd632cf7b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1e3304657f42926c1fb4c5f7ecbdf10.setIcon(icon_0cb67d4a382082a015164ffd632cf7b8);
+        
+    
+        var popup_3255234edfcc4b373fda886386380092 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c0ddbfdd8ea39c0ee9ec2982c2b6571 = $(`<div id="html_7c0ddbfdd8ea39c0ee9ec2982c2b6571" style="width: 100.0%; height: 100.0%;">홍콩반점0410 광주충장로점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 14<br> 주소 :  광주 동구 충장로안길 40-2 2층 (지번) 황금동 74 <br><a href="https://place.map.kakao.com/1620356393"target="_self">https://place.map.kakao.com/1620356393</a></div>`)[0];
+                popup_3255234edfcc4b373fda886386380092.setContent(html_7c0ddbfdd8ea39c0ee9ec2982c2b6571);
+            
+        
+
+        marker_f1e3304657f42926c1fb4c5f7ecbdf10.bindPopup(popup_3255234edfcc4b373fda886386380092)
+        ;
+
+        
+    
+    
+            var marker_2eba33390533df66eee9a1986537386d = L.marker(
+                [35.148961, 126.9247153],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_f8572e34d19af9661649ec6cd9ef7386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2eba33390533df66eee9a1986537386d.setIcon(icon_f8572e34d19af9661649ec6cd9ef7386);
+        
+    
+        var popup_78fafece6bf190ab6abdadd8f389baca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da96287e07ccf1e37abd73ab3cd5e840 = $(`<div id="html_da96287e07ccf1e37abd73ab3cd5e840" style="width: 100.0%; height: 100.0%;">다이닝야경 동명점</strong></h5> 평점 : 4.0 <br> 리뷰수 : 22<br> 주소 :  광주 동구 장동로 23-22 1층 (지번) 장동 78-3 <br><a href="https://place.map.kakao.com/619669879"target="_self">https://place.map.kakao.com/619669879</a></div>`)[0];
+                popup_78fafece6bf190ab6abdadd8f389baca.setContent(html_da96287e07ccf1e37abd73ab3cd5e840);
+            
+        
+
+        marker_2eba33390533df66eee9a1986537386d.bindPopup(popup_78fafece6bf190ab6abdadd8f389baca)
+        ;
+
+        
+    
+    
+            var marker_a12391381b15545d3524725e222f68a5 = L.marker(
+                [35.1392192, 126.9165071],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_2f5d44c6b8df3d4806815ab0d67e75bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a12391381b15545d3524725e222f68a5.setIcon(icon_2f5d44c6b8df3d4806815ab0d67e75bb);
+        
+    
+        var popup_f91a4eaf80e55ddfc80d957580be6474 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a77b03efe0b4d0a4da205836cf13d3e = $(`<div id="html_3a77b03efe0b4d0a4da205836cf13d3e" style="width: 100.0%; height: 100.0%;">학짬뽕</strong></h5> 평점 : 4.6 <br> 리뷰수 : 19<br> 주소 :  광주 남구 오기원길 1 1층 (지번) 양림동 92-28 <br><a href="https://place.map.kakao.com/1247641210"target="_self">https://place.map.kakao.com/1247641210</a></div>`)[0];
+                popup_f91a4eaf80e55ddfc80d957580be6474.setContent(html_3a77b03efe0b4d0a4da205836cf13d3e);
+            
+        
+
+        marker_a12391381b15545d3524725e222f68a5.bindPopup(popup_f91a4eaf80e55ddfc80d957580be6474)
+        ;
+
+        
+    
+    
+            var marker_68b613e9c5d8145de1378d6af7c3a2b5 = L.marker(
+                [35.1378176, 126.9173695],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_a9d47464a8e2abac10f78dc1373c3231 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68b613e9c5d8145de1378d6af7c3a2b5.setIcon(icon_a9d47464a8e2abac10f78dc1373c3231);
+        
+    
+        var popup_83ca6d720967a479071339ae1c860415 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10b4d91ae8b807e83a74bc0b87d5047d = $(`<div id="html_10b4d91ae8b807e83a74bc0b87d5047d" style="width: 100.0%; height: 100.0%;">밥제작소</strong></h5> 평점 : 5.0 <br> 리뷰수 : 45<br> 주소 :  광주 남구 정율성로 22 (지번) 양림동 72-4 <br><a href="https://place.map.kakao.com/1378661763"target="_self">https://place.map.kakao.com/1378661763</a></div>`)[0];
+                popup_83ca6d720967a479071339ae1c860415.setContent(html_10b4d91ae8b807e83a74bc0b87d5047d);
+            
+        
+
+        marker_68b613e9c5d8145de1378d6af7c3a2b5.bindPopup(popup_83ca6d720967a479071339ae1c860415)
+        ;
+
+        
+    
+    
+            var marker_0dfdd8b9a78ff02eec85cd66a4deae21 = L.marker(
+                [35.1395195, 126.9161706],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_191f8be9a1dee0f24c7db2fc3b5e72e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dfdd8b9a78ff02eec85cd66a4deae21.setIcon(icon_191f8be9a1dee0f24c7db2fc3b5e72e8);
+        
+    
+        var popup_48249ebdd9f91e5a2717ef21963958c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e5b351a7561db6a064bfafaddc5e54f = $(`<div id="html_9e5b351a7561db6a064bfafaddc5e54f" style="width: 100.0%; height: 100.0%;">고래</strong></h5> 평점 : 4.0 <br> 리뷰수 : 25<br> 주소 :  광주 남구 오기원길 19 1층 (지번) 양림동 66-31 <br><a href="https://place.map.kakao.com/684872667"target="_self">https://place.map.kakao.com/684872667</a></div>`)[0];
+                popup_48249ebdd9f91e5a2717ef21963958c8.setContent(html_9e5b351a7561db6a064bfafaddc5e54f);
+            
+        
+
+        marker_0dfdd8b9a78ff02eec85cd66a4deae21.bindPopup(popup_48249ebdd9f91e5a2717ef21963958c8)
+        ;
+
+        
+    
+    
+            var marker_fdd5f2b76bbb8db38661582e12cffd21 = L.marker(
+                [35.1315527, 126.903205],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_952d4cf561a14d570f3b27d85b289151 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdd5f2b76bbb8db38661582e12cffd21.setIcon(icon_952d4cf561a14d570f3b27d85b289151);
+        
+    
+        var popup_d789615495c72a2bb04750356e2bd671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d3c742e941a27fe1e3eac76c8376d83 = $(`<div id="html_4d3c742e941a27fe1e3eac76c8376d83" style="width: 100.0%; height: 100.0%;">무공돈까스 광주남구청점</strong></h5> 평점 : 4.2 <br> 리뷰수 : 55<br> 주소 :  광주 남구 봉선로19번길 1 (지번) 봉선동 1099 <br><a href="https://place.map.kakao.com/1540891723"target="_self">https://place.map.kakao.com/1540891723</a></div>`)[0];
+                popup_d789615495c72a2bb04750356e2bd671.setContent(html_4d3c742e941a27fe1e3eac76c8376d83);
+            
+        
+
+        marker_fdd5f2b76bbb8db38661582e12cffd21.bindPopup(popup_d789615495c72a2bb04750356e2bd671)
+        ;
+
+        
+    
+    
+            var marker_b0ebf762d725b21741da4f267453448b = L.marker(
+                [35.1511713, 126.8945801],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_4617af772da8b7332a58dba926a77f11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0ebf762d725b21741da4f267453448b.setIcon(icon_4617af772da8b7332a58dba926a77f11);
+        
+    
+        var popup_ea6a11a0324a0249c5bb1b81d060af38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81191d9aeb629abec25d60c58e9c8e1 = $(`<div id="html_c81191d9aeb629abec25d60c58e9c8e1" style="width: 100.0%; height: 100.0%;">모던갤러리</strong></h5> 평점 : 5.0 <br> 리뷰수 : 14<br> 주소 :  광주 남구 경열로76번길 3 1층 (지번) 월산동 901-14 <br><a href="https://place.map.kakao.com/330084953"target="_self">https://place.map.kakao.com/330084953</a></div>`)[0];
+                popup_ea6a11a0324a0249c5bb1b81d060af38.setContent(html_c81191d9aeb629abec25d60c58e9c8e1);
+            
+        
+
+        marker_b0ebf762d725b21741da4f267453448b.bindPopup(popup_ea6a11a0324a0249c5bb1b81d060af38)
+        ;
+
+        
+    
+    
+            var marker_77919d468b6957dff8ccaabc293c7a0f = L.marker(
+                [35.1771482, 126.9143112],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_5da67df2ad7a6ddf3ee3a5b7eb586ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77919d468b6957dff8ccaabc293c7a0f.setIcon(icon_5da67df2ad7a6ddf3ee3a5b7eb586ccf);
+        
+    
+        var popup_bb0707c6ce72b98b2c50fd8624288cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a46849a60755d0a092fb2d8cabe904c = $(`<div id="html_9a46849a60755d0a092fb2d8cabe904c" style="width: 100.0%; height: 100.0%;">역전할머니맥주 광주전남대점</strong></h5> 평점 : 4.0 <br> 리뷰수 : 12<br> 주소 :  광주 북구 호동로15번길 45 1층 (지번) 용봉동 153-9 <br><a href="https://place.map.kakao.com/1368221304"target="_self">https://place.map.kakao.com/1368221304</a></div>`)[0];
+                popup_bb0707c6ce72b98b2c50fd8624288cb1.setContent(html_9a46849a60755d0a092fb2d8cabe904c);
+            
+        
+
+        marker_77919d468b6957dff8ccaabc293c7a0f.bindPopup(popup_bb0707c6ce72b98b2c50fd8624288cb1)
+        ;
+
+        
+    
+    
+            var marker_85c70cbc12b35a9cd004c283014405d2 = L.marker(
+                [35.1777188, 126.9178386],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_aabfb83da25471f87d2002b2ef25206d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85c70cbc12b35a9cd004c283014405d2.setIcon(icon_aabfb83da25471f87d2002b2ef25206d);
+        
+    
+        var popup_3a6add547c7ae5c4b885113ee2ba2a1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af9b78322ff4a9ae36d23b0b44290b9c = $(`<div id="html_af9b78322ff4a9ae36d23b0b44290b9c" style="width: 100.0%; height: 100.0%;">코끼리손짜장</strong></h5> 평점 : 4.0 <br> 리뷰수 : 15<br> 주소 :  광주 북구 호동로 67 (지번) 문흥동 736-9 <br><a href="https://place.map.kakao.com/11232520"target="_self">https://place.map.kakao.com/11232520</a></div>`)[0];
+                popup_3a6add547c7ae5c4b885113ee2ba2a1b.setContent(html_af9b78322ff4a9ae36d23b0b44290b9c);
+            
+        
+
+        marker_85c70cbc12b35a9cd004c283014405d2.bindPopup(popup_3a6add547c7ae5c4b885113ee2ba2a1b)
+        ;
+
+        
+    
+    
+            var marker_d88dc424ea0c2f73fa16f4a2f4e7f2d8 = L.marker(
+                [35.1661515, 126.8911382],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_351fa7eb440fb2e7c4be0137f2897e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d88dc424ea0c2f73fa16f4a2f4e7f2d8.setIcon(icon_351fa7eb440fb2e7c4be0137f2897e57);
+        
+    
+        var popup_dba68451296e1fbe894cb060abdd19c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f6ca1688a4be84aada72784893c2db6 = $(`<div id="html_3f6ca1688a4be84aada72784893c2db6" style="width: 100.0%; height: 100.0%;">청와대</strong></h5> 평점 : 4.4 <br> 리뷰수 : 24<br> 주소 :  광주 북구 천변우로79번길 83 (지번) 임동 100-51 <br><a href="https://place.map.kakao.com/9450569"target="_self">https://place.map.kakao.com/9450569</a></div>`)[0];
+                popup_dba68451296e1fbe894cb060abdd19c0.setContent(html_3f6ca1688a4be84aada72784893c2db6);
+            
+        
+
+        marker_d88dc424ea0c2f73fa16f4a2f4e7f2d8.bindPopup(popup_dba68451296e1fbe894cb060abdd19c0)
+        ;
+
+        
+    
+    
+            var marker_a2222e34e6bc3b09a0b163d82acd992a = L.marker(
+                [35.17871239999999, 126.9123263],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_c6962da2d44ff2f8e0417348dc6f7d96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2222e34e6bc3b09a0b163d82acd992a.setIcon(icon_c6962da2d44ff2f8e0417348dc6f7d96);
+        
+    
+        var popup_4ec73a61e61df38592624fe24eb84252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc7042daed874fe872b0401cc96f8fa0 = $(`<div id="html_fc7042daed874fe872b0401cc96f8fa0" style="width: 100.0%; height: 100.0%;">스피드반점</strong></h5> 평점 : 4.4 <br> 리뷰수 : 10<br> 주소 :  광주 북구 우치로 126 (지번) 용봉동 141-8 <br><a href="https://place.map.kakao.com/9213899"target="_self">https://place.map.kakao.com/9213899</a></div>`)[0];
+                popup_4ec73a61e61df38592624fe24eb84252.setContent(html_fc7042daed874fe872b0401cc96f8fa0);
+            
+        
+
+        marker_a2222e34e6bc3b09a0b163d82acd992a.bindPopup(popup_4ec73a61e61df38592624fe24eb84252)
+        ;
+
+        
+    
+    
+            var marker_842480e725abbe6b544ef7c4be5a6402 = L.marker(
+                [35.180053, 126.9128618],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_4557682464de4730fefa584b5b8e8fc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_842480e725abbe6b544ef7c4be5a6402.setIcon(icon_4557682464de4730fefa584b5b8e8fc3);
+        
+    
+        var popup_34a0586946e70a77b13b1b9ab7adc829 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854e088984970304bd5e19ef345d6dc9 = $(`<div id="html_854e088984970304bd5e19ef345d6dc9" style="width: 100.0%; height: 100.0%;">호박반점</strong></h5> 평점 : 5.0 <br> 리뷰수 : 34<br> 주소 :  광주 북구 면앙로6번길 2 1층 (지번) 용봉동 125-33 <br><a href="https://place.map.kakao.com/2142221525"target="_self">https://place.map.kakao.com/2142221525</a></div>`)[0];
+                popup_34a0586946e70a77b13b1b9ab7adc829.setContent(html_854e088984970304bd5e19ef345d6dc9);
+            
+        
+
+        marker_842480e725abbe6b544ef7c4be5a6402.bindPopup(popup_34a0586946e70a77b13b1b9ab7adc829)
+        ;
+
+        
+    
+    
+            var marker_4434b40d29b6c7affd279dfde3efd36d = L.marker(
+                [35.1571857, 126.8786247],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_10b73b20bf0ee0f1a7f9a64977b21e55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4434b40d29b6c7affd279dfde3efd36d.setIcon(icon_10b73b20bf0ee0f1a7f9a64977b21e55);
+        
+    
+        var popup_23ab3186c479ac3b58c9d05d915c089f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7752834229980a3e210563dff3a30c = $(`<div id="html_2c7752834229980a3e210563dff3a30c" style="width: 100.0%; height: 100.0%;">파쿠야</strong></h5> 평점 : 4.6 <br> 리뷰수 : 92<br> 주소 :  광주 서구 내방로 348 2층 (지번) 화정동 69-3 <br><a href="https://place.map.kakao.com/679986812"target="_self">https://place.map.kakao.com/679986812</a></div>`)[0];
+                popup_23ab3186c479ac3b58c9d05d915c089f.setContent(html_2c7752834229980a3e210563dff3a30c);
+            
+        
+
+        marker_4434b40d29b6c7affd279dfde3efd36d.bindPopup(popup_23ab3186c479ac3b58c9d05d915c089f)
+        ;
+
+        
+    
+    
+            var marker_1c4de83989394458d6a945d0101db5d7 = L.marker(
+                [35.1597624, 126.8803477],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_6952f28ac0698c670835fbfb6445fb1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c4de83989394458d6a945d0101db5d7.setIcon(icon_6952f28ac0698c670835fbfb6445fb1d);
+        
+    
+        var popup_95abdd82b45a65c2ab8511d290b9d531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_552260230ad60beca903ec460c410711 = $(`<div id="html_552260230ad60beca903ec460c410711" style="width: 100.0%; height: 100.0%;">이비가짬뽕 광주유스퀘어점</strong></h5> 평점 : 4.7 <br> 리뷰수 : 10<br> 주소 :  광주 서구 무진대로 904 1층 147-2호 (지번) 광천동 49-1 <br><a href="https://place.map.kakao.com/807974847"target="_self">https://place.map.kakao.com/807974847</a></div>`)[0];
+                popup_95abdd82b45a65c2ab8511d290b9d531.setContent(html_552260230ad60beca903ec460c410711);
+            
+        
+
+        marker_1c4de83989394458d6a945d0101db5d7.bindPopup(popup_95abdd82b45a65c2ab8511d290b9d531)
+        ;
+
+        
+    
+    
+            var marker_0dc1f4345a8918ba08779540d2be6db5 = L.marker(
+                [35.173196, 126.8830145],
+                {}
+            ).addTo(marker_cluster_917efd1d25187a47303a35cb4cb0e223);
+        
+    
+            var icon_f0a06d90b14f74018ceb198e43fc5a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dc1f4345a8918ba08779540d2be6db5.setIcon(icon_f0a06d90b14f74018ceb198e43fc5a02);
+        
+    
+        var popup_32d94abb00ddcb977d4f692990ea1dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21b9fac8ec3ff8fa26192917d3e0e666 = $(`<div id="html_21b9fac8ec3ff8fa26192917d3e0e666" style="width: 100.0%; height: 100.0%;">고기짬뽕</strong></h5> 평점 : 4.0 <br> 리뷰수 : 20<br> 주소 :  광주 북구 대자로 95 1층 (지번) 운암동 97-26 <br><a href="https://place.map.kakao.com/202442126"target="_self">https://place.map.kakao.com/202442126</a></div>`)[0];
+                popup_32d94abb00ddcb977d4f692990ea1dae.setContent(html_21b9fac8ec3ff8fa26192917d3e0e666);
+            
+        
+
+        marker_0dc1f4345a8918ba08779540d2be6db5.bindPopup(popup_32d94abb00ddcb977d4f692990ea1dae)
+        ;
+
+        
+    
+</script>
+</html>
